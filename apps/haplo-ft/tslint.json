@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "haploFt", "camelCase"],
+    "component-selector": [true, "element", "haplo-ft", "kebab-case"]
+  }
+}
