@@ -1,23 +1,26 @@
+
+<div id="rootNavShow" class="rootButton" *ngIf="!showControlPanel" (click)="showControlPanel=true"><img
+        src="assets/svgs/CONTROLL_SHOW.svg" /></div>
 <div id="rootBox">
-    <span *ngIf="!showControlPanel" id="SetBar" (click)="showControlPanel=true"><img src="assets/svgs/CONTROLL_SHOW.svg" /></span>
-    <div *ngIf="showControlPanel" id="rootBar">
-        <div id="rootButtons">
-            <span class="haploFT-control"><img src="assets/svgs/WINDOW_EXIT.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/WINDOW_HIDE.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/DATABASE_SAVE.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/DATABASE_OPEN.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/DATABASE_DOWN.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/DATABASE_EDIT.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/SETINGS.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/SUPPORT.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/LANGUAGE.svg" /></span>
-            <span class="haploFT-control"><img src="assets/svgs/WINDOW_NEXT.svg" /></span>
-            <span class="haploFT-control" (click)="showControlPanel=false"><img src="assets/svgs/CONTROLL_HIDE.svg" /></span>
+    <div id="rootNav" *ngIf="showControlPanel">
+        <div id="rootControll">
+            <div id="rootButtons">
+                <div class="rootButton"><img src="assets/svgs/WINDOW_EXIT.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/WINDOW_HIDE.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/DATABASE_SAVE.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/DATABASE_OPEN.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/DATABASE_DOWN.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/DATABASE_EDIT.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/SETINGS.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/SUPPORT.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/LANGUAGE.svg" /></div>
+                <div class="rootButton"><img src="assets/svgs/WINDOW_NEXT.svg" /></div>
+                <div class="rootButton" (click)="showControlPanel=false"><img src="assets/svgs/CONTROLL_HIDE.svg" />
+                </div>
+            </div>
+            <img id="rootBrand" src="assets/svgs/CISOWSCY.COM_HAPLOFT.svg" />
         </div>
-        <div><img src="assets/svgs/BRADMARK.svg" /></div>
-        <div>a<br>b<br>c</div>
+        <div id="rootContainerNav" class="rootContainer">aaa</div>
     </div>
-    <div *ngIf="showControlPanel" id="rootSet" class="rootApp">c<br>b<br>a</div>
-    <div *ngIf="!showControlPanel" id="rootApp" class="rootApp">x<br>y<br>z</div>
-    <!--<app-ftdna></app-ftdna>-->
+    <div id="rootContainerMain" class="rootContainer">aaa</div>
 </div>
