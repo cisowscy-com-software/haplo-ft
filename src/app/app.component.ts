@@ -2,14 +2,15 @@ import { Component, ViewEncapsulation, ViewChild, ViewChildren, OnInit, ElementR
 
 @Component({
     selector: 'my-app',
-    templateUrl: '../views/root.html',
-    styleUrls: ['../views/root.scss'],
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.scss'],
     encapsulation: ViewEncapsulation.None
   })
 
   export class AppComponent {
     showControlPanel:boolean = true;
+    //name
 
-   
+
 
   }

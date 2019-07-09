@@ -4,5 +4,12 @@
   </head>
   <body>
   <my-app>loading</my-app>
+  <script type="text/javascript">
+    function updateFromDevice(data) {
+      window['componentRef'].zone.run(() => {
+          window['componentRef'].component.updateFromIframe(data);
+      });
+  }
+</script>
   </body>
 </html>

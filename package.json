@@ -2,7 +2,7 @@
   "name": "angular",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {    
+  "dependencies": {
     "@angular/animations": "~8.1.0",
     "@angular/common": "~8.1.0",
     "@angular/compiler": "~8.1.0",
@@ -24,7 +24,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "@angular-devkit/build-angular": "~0.801.0",
     "@angular/cli": "~8.1.0",
     "@angular/compiler-cli": "~8.1.0",

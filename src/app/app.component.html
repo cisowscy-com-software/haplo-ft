@@ -1,7 +1,7 @@
 <div id="rootBox">
     <span *ngIf="!showControlPanel" id="SetBar" (click)="showControlPanel=true"><img src="assets/svgs/CONTROLL_SHOW.svg" /></span>
     <div *ngIf="showControlPanel" id="rootBar">
-        <span>
+        <div id="rootButtons">
             <span class="haploFT-control"><img src="assets/svgs/WINDOW_EXIT.svg" /></span>
             <span class="haploFT-control"><img src="assets/svgs/WINDOW_HIDE.svg" /></span>
             <span class="haploFT-control"><img src="assets/svgs/DATABASE_SAVE.svg" /></span>
@@ -13,10 +13,11 @@
             <span class="haploFT-control"><img src="assets/svgs/LANGUAGE.svg" /></span>
             <span class="haploFT-control"><img src="assets/svgs/WINDOW_NEXT.svg" /></span>
             <span class="haploFT-control" (click)="showControlPanel=false"><img src="assets/svgs/CONTROLL_HIDE.svg" /></span>
-        </span>
-        <img src="assets/svgs/BRADMARK.svg" />
+        </div>
+        <div><img src="assets/svgs/BRADMARK.svg" /></div>
         <div>a<br>b<br>c</div>
     </div>
-    <div *ngIf="showControlPanel" id="rootSet">c<br>b<br>a</div>
-    <div *ngIf="!showControlPanel" id="rootApp">x<br>y<br>z</div>
+    <div *ngIf="showControlPanel" id="rootSet" class="rootApp">c<br>b<br>a</div>
+    <div *ngIf="!showControlPanel" id="rootApp" class="rootApp">x<br>y<br>z</div>
+    <!--<app-ftdna></app-ftdna>-->
 </div>

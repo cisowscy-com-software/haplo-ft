@@ -1,0 +1,53 @@
+
+@mixin flex($direction, $wrap) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+  }
+  
+  @mixin inline-flex($direction, $wrap) {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+  }
+
+#rootBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: blue 5px solid;
+    @include flex(row, nowrap);
+}
+#rootBar {
+    width : 450px;
+    height: 100%;
+    
+    @include flex(column, nowrap);
+}
+.rootApp{
+    flex: 1; 
+    @include flex(column, nowrap);
+}
+#rootButtons{
+    @include inline-flex(row, nowrap);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    filter: opacity(0.7);
+
+    span:hover {
+        filter: saturate(0);
+    }
+}
