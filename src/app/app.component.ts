@@ -25,7 +25,7 @@ export class AppComponent {
   constructor(private router: Router) {}
   changeControlPanel(nr:number, url:string) {
     this.selectedControlPanel = nr;
-    this.router.navigate([{ outlets: {nav: url} }], {skipLocationChange: true}).then(check => {
+    this.router.navigate([{ outlets: {nav: url} }], {skipLocationChange: false}).then(check => {
      // console.log(check); // true if navigation is successful
     }, err => {
     //  console.log(err) // when there's an error
