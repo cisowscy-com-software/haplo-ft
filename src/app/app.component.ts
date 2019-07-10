@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  showControlPanel:boolean = true;
+  showControlPanel:boolean = false;
   selectedControlPanel:number = 7;
   controlPanel = [
     {nr: 0, link: 'exit', srcSVG: 'assets/svgs/WINDOW_EXIT.svg'},

@@ -2,16 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { GridModule, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
+import {  
+  GridModule, 
+  PageService, 
+  SortService, 
+  FilterService, 
+  GroupService,
+  AggregateService,
+  ColumnChooserService } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 //import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavExitComponent, NavHideComponent, NavEditComponent, NavJoinComponent, NavHelpComponent, NavL18nComponent, NavOpenComponent, NavSaveComponent, NavToolComponent, NavViewComponent, } from './public/components/nav';
+import { 
+  NavExitComponent, 
+  NavHideComponent, 
+  NavEditComponent, 
+  NavJoinComponent, 
+  NavHelpComponent, 
+  NavL18nComponent, 
+  NavOpenComponent, 
+  NavSaveComponent, 
+  NavToolComponent, 
+  NavViewComponent, } from './public/components/nav';
 import { DomSanitizerPipe } from './public/pipes/dom-sanitizer.pipe';
 
 
 const routes: Routes = [
-   { path: '', component: NavHelpComponent, outlet: 'nav'},
+   { path: '', component: NavJoinComponent, outlet: 'set'},
    { path: 'exit', component: NavExitComponent, outlet: 'nav'},
    { path: 'hide', component: NavHideComponent, outlet: 'nav'},
    { path: 'save', component: NavSaveComponent, outlet: 'nav'},
@@ -42,13 +61,17 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    GridModule
+    GridModule,
+    ButtonModule,
+    TreeGridModule
   ],
   providers: [
     PageService,
     SortService,
     FilterService,
-    GroupService
+    GroupService,
+    AggregateService,
+    ColumnChooserService
   ],
   bootstrap: [AppComponent]
 })
