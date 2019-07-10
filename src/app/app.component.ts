@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   selector: 'haploft-root',
   templateUrl: './public/views/haploft-root.html',  
   styleUrls: ['./public/style/haploft-root.scss'],
-  //encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   showControlPanel:boolean = true;

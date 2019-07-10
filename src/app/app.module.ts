@@ -6,16 +6,7 @@ import { GridModule, PageService, SortService, FilterService, GroupService } fro
 
 //import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavExitComponent } from './public/components/nav/nav-exit.component';
-import { NavHideComponent } from './public/components/nav/nav-hide.component';
-import { NavEditComponent } from './public/components/nav/nav-edit.component';
-import { NavJoinComponent } from './public/components/nav/nav-join.component';
-import { NavHelpComponent } from './public/components/nav/nav-help.component';
-import { NavL18nComponent } from './public/components/nav/nav-l18n.component';
-import { NavOpenComponent } from './public/components/nav/nav-open.component';
-import { NavSaveComponent } from './public/components/nav/nav-save.component';
-import { NavToolComponent } from './public/components/nav/nav-tool.component';
-import { NavViewComponent } from './public/components/nav/nav-view.component';
+import { NavExitComponent, NavHideComponent, NavEditComponent, NavJoinComponent, NavHelpComponent, NavL18nComponent, NavOpenComponent, NavSaveComponent, NavToolComponent, NavViewComponent, } from './public/components/nav';
 import { DomSanitizerPipe } from './public/pipes/dom-sanitizer.pipe';
 
 

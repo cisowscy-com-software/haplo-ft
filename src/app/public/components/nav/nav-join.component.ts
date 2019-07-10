@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { projectsFTDNA } from '../../../data/projects-FTDNA';
 
 @Component({
@@ -9,7 +9,8 @@ import { projectsFTDNA } from '../../../data/projects-FTDNA';
     </p>
     <ejs-grid [dataSource]='tabSelectData'> </ejs-grid>
   `,
-  styles: []
+  styles: [],
+  encapsulation: ViewEncapsulation.None
 })
 export class NavJoinComponent implements OnInit {
 
