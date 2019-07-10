@@ -1,62 +1,63 @@
 <p>
-    nav-join works!
+  nav-join works!
 </p>
 <!--<ejs-grid [dataSource]='tabSelectData' [allowPaging]="true" [pageSettings]='pageSettings'>-->
 <!--<ejs-grid [dataSource]='data' [allowPaging]="true" [allowSorting]="true" [pageSettings]="pageSettings">
-    <e-columns>
-        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
-    </e-columns>
+  <e-columns>
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+      <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+      <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+  </e-columns>
 </ejs-grid>-->
 
 <ejs-grid #ProjectTabFTDNA [dataSource]='tabProjectsFTDNA'
-    [allowPaging]="true"  [pageSettings]="pageSettings"
-    [allowSorting]="true" [sortSettings]="sortSettings"
-    [allowFiltering]="true" [filterSettings]="filterSettings"
-    [allowGrouping]="true">
-	<e-columns>
-		<e-column field='ymap' headerText='yMAP' textAlign='Left' width=20></e-column>
-    <e-column field='ysnp' headerText='ySNP' textAlign='Left' width=20></e-column>
-    <e-column field='yresults' headerText='ySTR' textAlign='Left' width=20></e-column>
-    <e-column field='hasMmap' headerText='mMAP' textAlign='Left' width=20></e-column>
-    <e-column field='hasMsnp' headerText='mSNP' textAlign='Left' width=20></e-column>
-    <e-column field='name' headerText='name' width=100></e-column>
-    <e-column field='memberCount' headerText='all' textAlign='Right' width=20></e-column>
-    <e-column field='memberCountGpsY' headerText='Y gps' textAlign='Right' width=20></e-column>
-    <e-column field='memberCountGpsM' headerText='M gps' textAlign='Right' width=20></e-column>
-    <e-column field='lastCheck' headerText='last check' textAlign='Right' format='yMd' width=30></e-column>
-	</e-columns>
+  [allowPaging]="true"  [pageSettings]="pageSettings"
+  [allowSorting]="true" [sortSettings]="sortSettings"
+  [allowFiltering]="true" [filterSettings]="filterSettings"
+  [allowGrouping]="true" [groupSettings]='groupOptions'
+  [toolbar]='toolbarOptions' >
+<e-columns>
+  <e-column field='hasYmap' headerText='yMap' textAlign='Center' width=22></e-column>
+      <e-column field='hasYsnp' headerText='ySNP' textAlign='Center' width=22></e-column>
+      <e-column field='hasYstr' headerText='ySTR' textAlign='Center' width=22></e-column>
+      <e-column field='hasMmap' headerText='mMAP' textAlign='Center' width=22></e-column>
+      <e-column field='hasMsnp' headerText='mSNP' textAlign='Center' width=22></e-column>
+      <e-column field='name' headerText='project name' width=100></e-column>
+      <e-column field='members' headerText='🕺🏻💃🏻' textAlign='Right' width=32></e-column>
+      <e-column field='membersYgps' headerText='🌍🕺🏻' textAlign='Right' width=32></e-column>
+      <e-column field='membersMgps' headerText='🌍💃🏻' textAlign='Right' width=32></e-column>
+      <e-column field='lastCheck' headerText='🗓️📝' textAlign='Right' format='yMd' width=30></e-column>
+</e-columns>
 </ejs-grid>
 
 <!--<ejs-treegrid #snpTree [dataSource]='data' [treeColumnIndex]='0' parentIdMapping='parentName' idMapping='curentName'
 
 
-    [allowFiltering]="true" [filterSettings]="filterSettings"
- [allowSorting]="true" [sortSettings]="sortSettings"
- [allowPaging]="true" [pageSettings]='pageSettings'
+  [allowFiltering]="true" [filterSettings]="filterSettings"
+[allowSorting]="true" [sortSettings]="sortSettings"
+[allowPaging]="true" [pageSettings]='pageSettings'
 
- [allowResizing]='true' height=700 (dataBound)='onDataBound()' [allowReordering]='true' autoCheckHierarchy='false'>
-	<e-columns>
-		<e-column field='curentName' headerText='SNP or Surname' width='200' textAlign='Left' [lockColumn]='true' [showCheckbox]='true'></e-column>
-		<e-column field='originYear' headerText='LCA / TMRCA' width='170'></e-column>
-	</e-columns>
+[allowResizing]='true' height=700 (dataBound)='onDataBound()' [allowReordering]='true' autoCheckHierarchy='false'>
+<e-columns>
+  <e-column field='curentName' headerText='SNP or Surname' width='200' textAlign='Left' [lockColumn]='true' [showCheckbox]='true'></e-column>
+  <e-column field='originYear' headerText='LCA / TMRCA' width='170'></e-column>
+</e-columns>
 </ejs-treegrid>-->
 
 
 <!--
-      <e-column
-        field='StartDate'
-        headerText='Start Date'
-        width='130'
-        format="yMd"
-        textAlign='Right'
-      ></e-column>
-      <e-column
-        field='Duration'
-        headerText='Duration'
-        width='80'
-        textAlign='Right'
-      ></e-column>
-      -->
+    <e-column
+      field='StartDate'
+      headerText='Start Date'
+      width='130'
+      format="yMd"
+      textAlign='Right'
+    ></e-column>
+    <e-column
+      field='Duration'
+      headerText='Duration'
+      width='80'
+      textAlign='Right'
+    ></e-column>
+    -->

@@ -3,28 +3,30 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
-import {  
-  GridModule, 
-  PageService, 
-  SortService, 
-  FilterService, 
+import {
+  GridModule,
+  PageService,
+  SortService,
+  FilterService,
   GroupService,
   AggregateService,
-  ColumnChooserService } from '@syncfusion/ej2-angular-grids';
+  ColumnChooserService,
+  SearchService,
+  ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 //import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { 
-  NavExitComponent, 
-  NavHideComponent, 
-  NavEditComponent, 
-  NavJoinComponent, 
-  NavHelpComponent, 
-  NavL18nComponent, 
-  NavOpenComponent, 
-  NavSaveComponent, 
-  NavToolComponent, 
+import {
+  NavExitComponent,
+  NavHideComponent,
+  NavEditComponent,
+  NavJoinComponent,
+  NavHelpComponent,
+  NavL18nComponent,
+  NavOpenComponent,
+  NavSaveComponent,
+  NavToolComponent,
   NavViewComponent, } from './public/components/nav';
 import { DomSanitizerPipe } from './public/pipes/dom-sanitizer.pipe';
 
@@ -71,7 +73,9 @@ const routes: Routes = [
     FilterService,
     GroupService,
     AggregateService,
-    ColumnChooserService
+    ColumnChooserService,
+    SearchService,
+    ToolbarService
   ],
   bootstrap: [AppComponent]
 })

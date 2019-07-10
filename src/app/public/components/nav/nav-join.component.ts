@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { projectsFTDNA } from '../../../data/projects-FTDNA';
-//import { treeSNP } from '../../../data/datasourceTMP';
+import { treeSNP } from '../../../data/datasourceTMP';
 //import { TreeGridComponent, ResizeService, ReorderService } from '@syncfusion/ej2-angular-treegrid';
-import { PageSettingsModel, SortSettingsModel, FilterSettingsModel, ResizeService, ReorderService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { PageSettingsModel, SortSettingsModel, FilterSettingsModel, GroupSettingsModel, ToolbarItems, ResizeService, ReorderService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'haploft-nav-join',
@@ -34,6 +34,8 @@ name = 'Angular';
     public filterSettings: FilterSettingsModel;
     public sortSettings: SortSettingsModel;
     public pageSettings: PageSettingsModel;
+    public toolbarOptions: ToolbarItems[];
+    public groupOptions: GroupSettingsModel;
 
     ngOnInit(): void {
       this.tabProjectsFTDNA = projectsFTDNA;
@@ -45,19 +47,23 @@ name = 'Angular';
             operator: 'contains',
             predicate: 'and',
             value: ''
-          }]};
+          }],
+          ignoreAccent: true};
         this.sortSettings = {
           columns: [
-            { field: 'ymap', direction: 'Descending' },
-            { field: 'mtmap', direction: 'Descending' }
+            { field: 'members', direction: 'Descending' },
+            { field: 'membersYgps', direction: 'Descending' },
+            { field: 'membersMgps', direction: 'Descending' }
         ]};
         //Ascending
         this.pageSettings = {
-          pageSize: 25,
+          pageSize: 20,
           pageSizes: [5,10, 15, 20, 25, 50, 100,150,200,250, 500],
           //pageSizeMode: 'All',
           pageCount:5
         };
+        this.toolbarOptions = ['Search'];
+        this.groupOptions = { columns: ['hasYmap', 'hasMmap', 'hasYsnp', 'hasMsnp','hasYstr'] };
     }
     //onDataBound() {
     //    this.treeGridObj.autoFitColumns();
