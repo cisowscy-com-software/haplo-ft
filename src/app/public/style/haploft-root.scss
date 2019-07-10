@@ -1,0 +1,92 @@
+@mixin flex($direction, $wrap) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin inline-flex($direction, $wrap) {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+#rootBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include flex(row, nowrap);
+}
+
+#rootNavShow {
+    position: fixed;
+    z-index: 100;
+    bottom: 5px;
+    left: 5px;
+}
+
+#rootNav {
+    width: 450px;
+    @include flex(column, nowrap);
+    border-right: 1px solid black;
+
+    #rootControll {
+        height: 160px;
+        @include flex(column, nowrap);
+
+        #rootButtons {
+            @include inline-flex(row, nowrap);
+        }
+
+        #rootBrand {
+            height: 100px;
+            margin: 10px;
+            @include no-select;
+        }
+    }
+}
+
+.rootButton {
+    height: 30px;
+    width: 30px;
+    align-content: center;
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px 7px 5px 7px;
+    -webkit-filter: opacity(0.8);
+    filter: opacity(0.8);
+    cursor: pointer;
+}
+.rootButton:hover {
+    -webkit-filter: saturate(0);
+    filter: saturate(0);
+} 
+
+.rootContainer {
+    flex: 1;
+    @include flex(column, nowrap);
+    padding: 5px;
+}

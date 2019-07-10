@@ -1,0 +1,23 @@
+
+<div id="rootNavShow" class="rootButton" *ngIf="!showControlPanel" (click)="showControlPanel=true"><img
+    src="assets/svgs/CONTROLL_SHOW.svg" /></div>
+<div id="rootBox">
+<div id="rootNav" *ngIf="showControlPanel">
+    <div id="rootControll">
+        <div id="rootButtons">
+                <ng-container *ngFor="let panel of controlPanel">
+                        <div *ngIf="selectedControlPanel != panel.nr" class="rootButton" (click)="changeControlPanel(panel.nr, panel.link)" [routerLink]="panel.link"><img [src]="panel.srcSVG"   /></div>
+                </ng-container>           
+            <div class="rootButton" (click)="showControlPanel=false"><img src="assets/svgs/CONTROLL_HIDE.svg" />
+            </div>
+        </div>
+        <img id="rootBrand" src="assets/svgs/CISOWSCY.COM_HAPLOFT.svg" />
+    </div>
+    <div id="rootContainerNav" class="rootContainer">
+        <router-outlet name='nav'></router-outlet>
+    </div>
+</div>
+<div id="rootContainerMain" class="rootContainer">
+    <router-outlet name='set'></router-outlet>
+</div>
+</div>
