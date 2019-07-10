@@ -11,31 +11,30 @@
     </e-columns>
 </ejs-grid>-->
 
-<ejs-grid #ProjectTabFTDNA [dataSource]='tabProjectsFTDNA' 
-    [allowPaging]="true"  [pageSettings]="pageSettings" 
-    [allowSorting]="true" [sortSettings]="sortSettings" 
+<ejs-grid #ProjectTabFTDNA [dataSource]='tabProjectsFTDNA'
+    [allowPaging]="true"  [pageSettings]="pageSettings"
+    [allowSorting]="true" [sortSettings]="sortSettings"
     [allowFiltering]="true" [filterSettings]="filterSettings"
     [allowGrouping]="true">
 	<e-columns>
-		<e-column field='hasYmap' headerText='Y0' textAlign='Left' width=20></e-column>
-        <e-column field='hasYsnp' headerText='Y1' textAlign='Left' width=20></e-column>
-        <e-column field='hasYstr' headerText='Y2' textAlign='Left' width=20></e-column>
-        <e-column field='hasMmap' headerText='M0' textAlign='Left' width=20></e-column>
-        <e-column field='hasMsnp' headerText='M1' textAlign='Left' width=20></e-column>
-        <e-column field='name' headerText='name' width=100></e-column>
-        <e-column field='type' headerText='type' width=40></e-column>
-        <e-column field='members' headerText='all' textAlign='Right' width=20></e-column>
-        <e-column field='membersYgps' headerText='Y gps' textAlign='Right' width=20></e-column>
-        <e-column field='membersMgps' headerText='M gps' textAlign='Right' width=20></e-column>
-        <e-column field='lastCheck' headerText='last check' textAlign='Right' format='yMd' width=30></e-column>
+		<e-column field='ymap' headerText='yMAP' textAlign='Left' width=20></e-column>
+    <e-column field='ysnp' headerText='ySNP' textAlign='Left' width=20></e-column>
+    <e-column field='yresults' headerText='ySTR' textAlign='Left' width=20></e-column>
+    <e-column field='hasMmap' headerText='mMAP' textAlign='Left' width=20></e-column>
+    <e-column field='hasMsnp' headerText='mSNP' textAlign='Left' width=20></e-column>
+    <e-column field='name' headerText='name' width=100></e-column>
+    <e-column field='memberCount' headerText='all' textAlign='Right' width=20></e-column>
+    <e-column field='memberCountGpsY' headerText='Y gps' textAlign='Right' width=20></e-column>
+    <e-column field='memberCountGpsM' headerText='M gps' textAlign='Right' width=20></e-column>
+    <e-column field='lastCheck' headerText='last check' textAlign='Right' format='yMd' width=30></e-column>
 	</e-columns>
 </ejs-grid>
 
-<!--<ejs-treegrid #snpTree [dataSource]='data' [treeColumnIndex]='0' parentIdMapping='parentName' idMapping='curentName' 
-    
-    
-    [allowFiltering]="true" [filterSettings]="filterSettings" 
- [allowSorting]="true" [sortSettings]="sortSettings" 
+<!--<ejs-treegrid #snpTree [dataSource]='data' [treeColumnIndex]='0' parentIdMapping='parentName' idMapping='curentName'
+
+
+    [allowFiltering]="true" [filterSettings]="filterSettings"
+ [allowSorting]="true" [sortSettings]="sortSettings"
  [allowPaging]="true" [pageSettings]='pageSettings'
 
  [allowResizing]='true' height=700 (dataBound)='onDataBound()' [allowReordering]='true' autoCheckHierarchy='false'>
@@ -46,18 +45,18 @@
 </ejs-treegrid>-->
 
 
-<!--  
-      <e-column 
-        field='StartDate' 
-        headerText='Start Date' 
-        width='130' 
-        format="yMd" 
+<!--
+      <e-column
+        field='StartDate'
+        headerText='Start Date'
+        width='130'
+        format="yMd"
         textAlign='Right'
       ></e-column>
-      <e-column 
-        field='Duration' 
-        headerText='Duration' 
-        width='80' 
+      <e-column
+        field='Duration'
+        headerText='Duration'
+        width='80'
         textAlign='Right'
       ></e-column>
       -->

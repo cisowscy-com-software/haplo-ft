@@ -1,0 +1,40 @@
+{
+  "vscode-json-editor.theme": "dark",
+  "angular-template-formatter.closeTagSameLine": true,
+  "angulardoc.email": "janromancisowski@cisowscy.com",
+  "angulardoc.username": "CisSasGot",
+  "cSpell.language": "en,pl,pl-PL,en-US,en-GB",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "bottom",
+  "editor.wordWrap": "off",
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "explorer.confirmDelete": false,
+  "gitlens.defaultDateFormat": "MMMM Do, YYYY:hmma",
+  "gitlens.mode.statusBar.alignment": "right",
+  "gitlens.statusBar.alignment": "right",
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "html.format.wrapLineLength": 0,
+  "materialTheme.fixIconsRunning": true,
+  "team.showWelcomeMessage": false,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.rendererType": "canvas",
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Material Theme Palenight",
+  "workbench.editor.closeEmptyGroups": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "csproj.enabled": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#312E12",
+    "titleBar.activeBackground": "#444119",
+    "titleBar.activeForeground": "#FBFAF4"
+  }
+}

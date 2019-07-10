@@ -20,7 +20,6 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
-    "@syncfusion/ej2": "^17.1.51",
     "@syncfusion/ej2-angular-buttons": "^17.1.50",
     "@syncfusion/ej2-angular-grids": "^17.1.51",
     "@syncfusion/ej2-angular-treegrid": "17.1.51",

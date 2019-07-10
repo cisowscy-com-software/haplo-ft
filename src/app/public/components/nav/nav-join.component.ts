@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { projectsFTDNA } from '../../../data/projects-FTDNA';
-import { treeSNP } from '../../../data/datasourceTMP';
+//import { treeSNP } from '../../../data/datasourceTMP';
 //import { TreeGridComponent, ResizeService, ReorderService } from '@syncfusion/ej2-angular-treegrid';
 import { PageSettingsModel, SortSettingsModel, FilterSettingsModel, ResizeService, ReorderService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
@@ -39,21 +39,21 @@ name = 'Angular';
       this.tabProjectsFTDNA = projectsFTDNA;
         //this.data = treeSNP;
         this.filterSettings = {
-          columns: [{ 
-            field: 'name', 
-            matchCase: true, 
-            operator: 'contains', 
-            predicate: 'and', 
-            value: 'ddd' 
+          columns: [{
+            field: 'name',
+            matchCase: true,
+            operator: 'contains',
+            predicate: 'and',
+            value: ''
           }]};
-        this.sortSettings = { 
+        this.sortSettings = {
           columns: [
-            { field: 'hasYmap', direction: 'Descending' },
-            { field: 'hasMmap', direction: 'Descending' }
+            { field: 'ymap', direction: 'Descending' },
+            { field: 'mtmap', direction: 'Descending' }
         ]};
         //Ascending
-        this.pageSettings = { 
-          pageSize: 100,
+        this.pageSettings = {
+          pageSize: 25,
           pageSizes: [5,10, 15, 20, 25, 50, 100,150,200,250, 500],
           //pageSizeMode: 'All',
           pageCount:5
