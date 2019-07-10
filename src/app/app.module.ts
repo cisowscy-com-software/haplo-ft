@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { GridModule, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+
 //import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavExitComponent } from './public/components/nav/nav-exit.component';
@@ -48,9 +50,15 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    GridModule
   ],
-  providers: [],
+  providers: [
+    PageService,
+    SortService,
+    FilterService,
+    GroupService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
