@@ -3,12 +3,12 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'haploft-root',
-  templateUrl: './public/views/haploft-root.html',  
+  templateUrl: './public/views/haploft-root.html',
   styleUrls: ['./public/style/haploft-root.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  showControlPanel:boolean = false;
+  showControlPanel:boolean = true;
   selectedControlPanel:number = 7;
   controlPanel = [
     {nr: 0, link: 'exit', srcSVG: 'assets/svgs/WINDOW_EXIT.svg'},
