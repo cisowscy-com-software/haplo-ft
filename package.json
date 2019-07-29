@@ -1,0 +1,44 @@
+{
+  "type": "module",
+  "name": "haplo-ft",
+  "version": "1.0.0",
+  "nwversion": "0.40.0-beta1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "(cd packages/to-download && npm install)",
+    "build": "gulp build",
+    "start": "browserify ./packages/to-download/_core.js -o ./packages/to-download/core.js && nw packages/to-download",
+    "lint": "eslint **/*.js --ignore-pattern **/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cisowscy-com-software/haplo-ft.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependenciens": {
+    "core-js": "^3.1.4",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.7.1",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^5.0.0",
+    "nw": "^0.40.0-beta1sdk",
+    "nw-builder": "^3.5.7",
+    "rcedit": "^2.0.0",
+    "semver": "^6.3.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.3.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-node": "^9.1.0",
+    "npm": "^6.10.2",
+    "stream-exhaust": "^1.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/cisowscy-com-software/haplo-ft/issues"
+  },
+  "homepage": "https://github.com/cisowscy-com-software/haplo-ft#readme"
+}
