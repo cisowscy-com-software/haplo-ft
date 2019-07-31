@@ -1,1 +1,0 @@
-const win = require('nw.gui');

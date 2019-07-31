@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+          <defs>
+            <clipPath id="a">
+              <rect width="30" height="30" fill="none" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#a)">
+            <g clip-path="url(#a)">
+              <circle cx="15" cy="15" r="15" fill="#bbdc80" />
+              <g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="3 0"
+                opacity="0.35">
+                <circle cx="15" cy="15" r="15" stroke="none" />
+                <circle cx="15" cy="15" r="14.4" fill="none" />
+              </g>
+              <path
+                d="M16,8.994A6.2,6.2,0,0,0,4.424,7.341a4.959,4.959,0,0,0,.537,9.889H15.71A4.122,4.122,0,0,0,16,8.994Zm-.289,6.582H4.961A3.3,3.3,0,0,1,4.6,8.986L5.482,8.9,5.9,8.109a4.537,4.537,0,0,1,8.484,1.207l.248,1.24,1.265.091a2.467,2.467,0,0,1-.182,4.928ZM11.121,8.961h-2.4v2.481H6.615l3.307,3.307,3.307-3.307H11.121Z"
+                transform="translate(5.078 4.385)" opacity="0.5" />
+            </g>
+          </g>
+        </svg>

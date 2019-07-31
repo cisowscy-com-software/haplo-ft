@@ -1,0 +1,44 @@
+{
+  "type": "module",
+  "name": "downloader-4-haplo-ft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "engineStrict": true,
+  "engines": {
+    "npm": "^6.10.2"
+  },
+  "window": {
+    "icon": "./img/icona256.png",
+    "show": true,
+    "toolbar": false,
+    "frame": false,
+    "transparent": true,
+    "width": 1200,
+    "height": 800,
+    "position": "center",
+    "min_width": 400,
+    "min_height": 400,
+    "max_width": 8000,
+    "max_height": 8000
+  },
+  "webkit": {
+    "plugin": true,
+    "page-cache": true
+  },
+  "chromium-args": {
+    "auto-open-devtools-for-tabs": true
+  },
+  "user-agent": "%name %ver %nwver %webkit_ver %osinfo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "fs-extra": "^8.1.0",
+    "xterm": "^3.14.5"
+  }
+}

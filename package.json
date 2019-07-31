@@ -2,14 +2,15 @@
   "type": "module",
   "name": "haplo-ft",
   "version": "1.0.0",
-  "nwversion": "0.40.0-beta1",
+  "nwversion": "0.40.0-beta1sdk",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "(cd packages/to-download && npm install)",
-    "build": "gulp build",
-    "start": "browserify ./packages/to-download/_core.js -o ./packages/to-download/core.js && nw packages/to-download",
+    "postinstall": "(cd packages/DOWNLOADER4haploFT && npm install && bower install)",
+    "build": "nwbuild -p win32,win64 --zip true --flavor sdk --macIcns ./favicon.icns --winIco ./favicon.ico -o ./dist ./packages/DOWNLOADER4haploFT/",
+    "coreJS": "browserify ./packages/DOWNLOADER4haploFT/include/_js.js -o ./packages/DOWNLOADER4haploFT/include/js.js",
+    "start": "nw packages/DOWNLOADER4haploFT",
     "lint": "eslint **/*.js --ignore-pattern **/node_modules"
   },
   "repository": {
@@ -21,16 +22,13 @@
   "license": "ISC",
   "dependenciens": {
     "core-js": "^3.1.4",
-    "gulp": "^4.0.2",
-    "gulp-shell": "^0.7.1",
-    "gulp-util": "^3.0.8",
-    "gulp-zip": "^5.0.0",
     "nw": "^0.40.0-beta1sdk",
     "nw-builder": "^3.5.7",
     "rcedit": "^2.0.0",
     "semver": "^6.3.0"
   },
   "devDependencies": {
+    "bower": "^1.8.8",
     "browserify": "^16.3.0",
     "eslint": "^6.1.0",
     "eslint-plugin-node": "^9.1.0",

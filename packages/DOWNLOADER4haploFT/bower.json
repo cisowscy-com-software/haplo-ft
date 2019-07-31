@@ -1,0 +1,22 @@
+{
+  "name": "downloader-4-haplo-ft",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Cisowscy.com Jan Roman Cisowski <janromancisowski@cisowscy.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cisowscy-com-software/haplo-ft",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
